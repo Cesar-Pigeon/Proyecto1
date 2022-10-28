@@ -212,6 +212,8 @@ void tiempousado(int t)
    Sleep(1000); //1 segundo (10 segundos es igual a 1 hora)
    temporizador++;   
  }  
+
+    cout << "----- ASESORIA TERMINADA ------" << endl;
 }
 
 
@@ -222,16 +224,16 @@ void menu()
     string op;
     string si = "Si";
     string no = "No";
-    while(p < 1 || p > 5)
-    {
-        cin >> p;
-    }
+    cin >> p;
     if(p == 1)  //Opcion 1 (informacion)
     {
         Info();
         cout << "Deseas volver al menu?" << endl;
         cout << "  Inserte Si) o No)   " << endl;
+        while(op != si || op != no)
+        {
         cin >> op;
+        }
         if(op == si)
         {
             titulo();
@@ -261,6 +263,9 @@ void menu()
 
         if(p == 4) //Opcion 4 (escoger Asesor)
     {
+        string r;
+        string si = "Si";
+        string no = "No";
         mostrarasesores();
         cout << "Escoge un asesor: ";
         int a;
@@ -270,8 +275,18 @@ void menu()
         cin >> t;
         tiempousado(t);
 
-        titulo();
-        menu();
+        cout << "Deseas volver a el menu?" << endl;;
+        cout << "Si)   No)" << endl;
+        cin >> r;
+        if(r == si)
+        {
+            titulo();
+            menu();
+        }
+        if(r == no)
+        {
+             cout << "--------- Hasta luego ---------";
+        }
 
     }
 
