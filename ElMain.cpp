@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -174,15 +175,14 @@ void titulo()
 
 }
 
-void escogerasesor()
+void mostrarasesores()
 {
-    int escoger;
     ifstream archivo;
     string nombre,text;
 
     nombre = "asesores";
 
-    cout << "Escoge un asesor segun su posicion: ";
+    cout << "Escoge un asesor segun su posicion: " << endl;
 
     archivo.open(nombre, ios::in);
 
@@ -197,9 +197,19 @@ void escogerasesor()
         cout <<text<<endl;
     }
 
-    cin >> escoger;
-
     archivo.close();
+}
+
+void tiempousado(int t)
+{
+     int temporizador = 1;
+     int tt = t*10;
+ while (temporizador <= tt)
+ {
+   cout << temporizador << endl;
+   Sleep(1000); //1 segundo (1 segundo es igual a 1 hora)
+   temporizador++;   
+ }  
 }
 
 void menu()
@@ -238,7 +248,7 @@ void menu()
         menu();
     }
 
-        if(p == 3) //Opcion 3 (Asesor)
+        if(p == 3) //Opcion 3 (registro Asesor)
     {
         registroasesor();
 
@@ -246,10 +256,19 @@ void menu()
         menu();
     }
 
-        if(p == 4) //Opcion 4 (Asesor)
+        if(p == 4) //Opcion 4 (escoger Asesor)
     {
-    
-        escogerasesor();
+        mostrarasesores();
+        cout << "Escoge un asesor: ";
+        int a;
+        cin >> a;
+        cout << "Cuantas horas de asesoria necesitas: ";
+        int t;
+        cin >> t;
+        tiempousado(t);
+
+        titulo();
+        menu();
 
     }
 
@@ -258,11 +277,6 @@ void menu()
         cout << "--------- Hasta luego ---------";
     }
 
-}
-
-void opcion1()
-{
-    
 }
 
 int main()
