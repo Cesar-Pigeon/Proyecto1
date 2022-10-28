@@ -176,10 +176,13 @@ void titulo()
 
 void escogerasesor()
 {
+    int escoger;
     ifstream archivo;
     string nombre,text;
 
     nombre = "asesores";
+
+    cout << "Escoge un asesor segun su posicion: ";
 
     archivo.open(nombre, ios::in);
 
@@ -194,6 +197,7 @@ void escogerasesor()
         cout <<text<<endl;
     }
 
+    cin >> escoger;
 
     archivo.close();
 }
