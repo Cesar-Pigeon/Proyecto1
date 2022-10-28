@@ -75,6 +75,9 @@ void registroasesor()
     archivo.open(nombre,ios::app);
 
         fflush(stdin);
+        archivo << "" << endl;
+
+        fflush(stdin);
         cout << "Ingresa tu nombre: " << endl;
         getline(cin, texto);
         archivo << "Usuario: " << texto << endl;
@@ -241,6 +244,7 @@ void menu()
 
         if(p == 4) //Opcion 4 (Asesor)
     {
+    
         escogerasesor();
 
     }
