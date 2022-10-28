@@ -205,18 +205,15 @@ void tiempousado(int t)
 {
      int temporizador = 1;
      int tt = t*10;
+     cout << "*Corriendo asesoria*" << endl;
  while (temporizador <= tt)
  {
    cout << temporizador << endl;
-   Sleep(1000); //1 segundo (1 segundo es igual a 1 hora)
+   Sleep(1000); //1 segundo (10 segundos es igual a 1 hora)
    temporizador++;   
  }  
 }
 
-void *hilocont(void *arg)
-{
-    
-}
 
 void menu()
 {
