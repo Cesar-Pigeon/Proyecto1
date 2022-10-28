@@ -5,10 +5,10 @@
 
 https://youtu.be/vGrkhnvS87c  (Video explicativo)
 
-Mi proyecto es un programa para asesorias que permite a estudiantes registrarse tanto como alumnos como asesores, el proposito de esto es facilitar el aprendizaje y sentir una confianza mas apta al momento de tomar clases, porque seamos sinceros, quien puede entender mas a un alumno que un alumno
+My project is an advisory program that allows students to register as both students and advisors, the purpose of this is to facilitate learning and feel more confident when taking classes, because let's be honest, who can understand a student more than a student
 
-Al registrarte como estudiante, tienes la oportunidad de escoger entre los asesores indicados segun cual sea el mas optimo para ti siguiendo sus caracteristicas
+When registering as a student, you have the opportunity to choose between the advisors indicated according to which is the most optimal for you following their characteristics
 
-Al registrarte como asesor, tienes la libertad de proporcionar tus requisitos de servicio, como puede ser que materia impartir y cuanto cobrar por tus servicios
+When registering as an advisor, you have the freedom to provide your service requirements, such as what subject to teach and how much to charge for your services.
 
-(De momento este programa funciona como una simulacion de las asesorias)
+(At the moment this program works as a simulation of the consultancies)
