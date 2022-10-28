@@ -1,6 +1,6 @@
 #include <iostream>
+#include <string>
 #include <bits/stdc++.h>
-//#include <titulo.h> 
 
 using namespace std;
 
@@ -202,7 +202,7 @@ void menu()
     string op;
     string si = "Si";
     string no = "No";
-    while(p < 1 || p > 4)
+    while(p < 1 || p > 5)
     {
         cin >> p;
     }
@@ -239,7 +239,7 @@ void menu()
         menu();
     }
 
-        if(p == 4) //Opcion 3 (Asesor)
+        if(p == 4) //Opcion 4 (Asesor)
     {
         escogerasesor();
 
