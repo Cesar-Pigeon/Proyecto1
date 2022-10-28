@@ -219,21 +219,19 @@ void tiempousado(int t)
 
 void menu()
 {
-    int usnum = 0;
     int p = 0;
+    int *pp;
     string op;
     string si = "Si";
     string no = "No";
     cin >> p;
-    if(p == 1)  //Opcion 1 (informacion)
+    pp = &p;
+    if(*pp == 1)  //Opcion 1 (informacion)
     {
         Info();
         cout << "Deseas volver al menu?" << endl;
         cout << "  Inserte Si) o No)   " << endl;
-        while(op != si || op != no)
-        {
         cin >> op;
-        }
         if(op == si)
         {
             titulo();
@@ -245,7 +243,7 @@ void menu()
         }
     }
 
-    if(p == 2) //Opcion 2 (Alumno)
+    if(*pp == 2) //Opcion 2 (Alumno)
     {
         registroalumnos();
 
@@ -253,7 +251,7 @@ void menu()
         menu();
     }
 
-        if(p == 3) //Opcion 3 (registro Asesor)
+        if(*pp== 3) //Opcion 3 (registro Asesor)
     {
         registroasesor();
 
@@ -261,7 +259,7 @@ void menu()
         menu();
     }
 
-        if(p == 4) //Opcion 4 (escoger Asesor)
+        if(*pp == 4) //Opcion 4 (escoger Asesor)
     {
         string r;
         string si = "Si";
@@ -290,7 +288,7 @@ void menu()
 
     }
 
-    if(p == 5) //Opcion 5 (Cerrar)
+    if(*pp == 5) //Opcion 5 (Cerrar)
     {
         cout << "--------- Hasta luego ---------";
     }
