@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <windows.h>
+#include <pthread.h>
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -210,6 +211,11 @@ void tiempousado(int t)
    Sleep(1000); //1 segundo (1 segundo es igual a 1 hora)
    temporizador++;   
  }  
+}
+
+void *hilocont(void *arg)
+{
+    
 }
 
 void menu()
